@@ -1,0 +1,54 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* macro-area structure */
+.app-container {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    background-color: aliceblue;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
+.side-nav {
+    background-color: lightgreen;
+    width: 250px;
+    overflow-y: hidden;
+}
+
+.main-content {
+    background-color: lightseagreen;
+    width: calc(100% - 250px);
+    padding-top: 80px;
+    overflow-y: auto;
+}
+
+footer {
+    background-color: lightcoral;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+.fixed-row {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    width: calc(100% - 250px);
+}
