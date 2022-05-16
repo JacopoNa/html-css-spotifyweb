@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,33 +21,42 @@
             <div class="side-nav">
                 <div class="top-nav">
                     <div class="images">
-                        <img src="" alt="small-logo">
-                        <img class="text-logo" src="" alt="text-logo">
+                        <img class="small-logo" src="img/logo-small.svg" alt="small-logo">
+                        <img class="text-logo" src="img/logo.svg" alt="text-logo">
                     </div>
 
                     <div class="user-list">
                         <ul>
-                            <li><img src="" alt="img user-list"> <span>test</span></li>
-                            <li><img src="" alt="img user-list"> <span>test</span></li>
-                            <li><img src="" alt="img user-list"> <span>test</span></li>
+                            <li><a href="#"><img src="img/home.svg" alt="img user-list"> <span>Home</span></a></li>
+                            <li class="left-padding"><a href="#"><img src="img/search.svg" alt="img user-list"> <span>Cerca</span></a></li>
+                            <li class="left-padding"><a href="#"><img src="img/libreria.svg" alt="img user-list"> <span>La tua libreria</span></a></li>
                         </ul>
                     </div>
 
-                    <div class="playlist">
-                        playlist
+                    <div class="playlist left-padding">
+                        <h5>PLAYLIST</h5>
+
                         <ul>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
+                            <li><a href="#"><i class="fa-solid fa-plus"></i> Crea Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
                         </ul>
                     </div>
                 </div>
 
-               <div class="user-account">
-                    <img src="" alt="installa"> <span>installa app</span>
-                    <img src="" alt="user img"> <span>name user</span>
+               <div class="user-account left-padding">
+                    <a href="#"><img src="img/download.svg" alt="installa"> <span>Installa app</span></a> <br>
+
+                    <div class="line">
+                        <hr>
+                    </div>
+
+                    <a href="#"><img class="profile" src="img/profile.svg" alt="user img"> <span class="username">John Doe</span></a>
                </div>
             </div>
 

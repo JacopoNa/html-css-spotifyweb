@@ -15,6 +15,14 @@ a {
     color: inherit;
 }
 
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* macro-area structure */
 .app-container {
     width: 100%;
@@ -37,8 +45,106 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-weight: 600;
+    font-size: 13px;
 }
 
+.left-padding {
+    padding-left: 15px;
+}
+
+.images .small-logo {
+    width: 35px;
+}
+
+.images .text-logo {
+    width: 150px;
+    margin: 15px 15px;
+}
+
+.user-list {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #a3a3a3;
+}
+
+.user-list img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.user-list span {
+    vertical-align: middle;
+}
+
+.playlist i {
+    background-color: #a3a3a3;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.playlist {
+    color: #a3a3a3;
+}
+
+.playlist h5 {
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.user-account {
+    color: #a3a3a3;
+}
+
+.user-list li:first-child {
+    color: white;
+    border-left: 3px solid #adff2f;
+    padding-left: 11px;
+}
+
+.side-nav ul {
+    line-height: 2rem;
+}
+
+.side-nav a:hover {
+    color: white;
+}
+
+.playlist ul i:hover {
+    background-color: white;
+}
+
+.user-account img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.user-account span {
+    vertical-align: middle;
+}
+
+.line {
+    width: 85%;
+    margin-left: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile {
+    background-color: #a3a3a3;
+    border-radius: 50%;
+}
+
+.username {
+    color: white;
+}
+
+.user-account:last-child {
+    margin-bottom: 10px;
+}
 
 
 
@@ -87,6 +193,13 @@ footer {
 
 /* end macro-area */
 
+
+@media  screen and (min-width:600px) {
+    .small-logo {
+        display: none;
+    }
+}
+
 /* xs screen*/
 @media screen and (max-width: 600px){
     .side-nav {
@@ -116,4 +229,50 @@ footer {
     .fixed-row {
         width: calc(100% - 50px);
     }
+
+    .text-logo {
+        display: none;
+    }
+
+    .small-logo {
+        display: block;
+    }
+
+    .images {
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .user-list li:first-child {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .user-list li {
+        padding: 0;
+    }
+
+    .user-list ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .line {
+        display: none;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .user-account {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    
 }
+
+
+
