@@ -108,4 +108,12 @@ footer {
     .user-account span {
         display: none;
     }
+
+    .main-content {
+        width: calc(100% - 50px);
+    }
+
+    .fixed-row {
+        width: calc(100% - 50px);
+    }
 }
