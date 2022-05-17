@@ -161,6 +161,7 @@ main {
     overflow-y: auto;
 }
 
+/* main nav buttons */
 .nav-buttons {
     width: 100%;
 }
@@ -195,6 +196,46 @@ main {
 .card a:hover {
     color: white;
 }
+
+/* play */
+
+.play-columns {
+    display: flex;
+}
+
+.play-col {
+    width: calc(100% / 6);
+}
+
+.play-card {
+    padding: 0px 15px;
+}
+
+.play-content {
+    color: white;
+}
+
+.play-content h2 {
+    margin-bottom: 1rem;
+    margin-left: 13px;
+}
+
+.play-text {
+    text-align: center;
+}
+
+.play-text h4 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.play-text span {
+    color: #7b7d82;
+    font-size: 13px;
+    font-weight: bold;
+}
+
 
 
 /* footer */
@@ -237,6 +278,7 @@ footer {
 
 /* md screen */
 @media screen and (max-width: 1100px) {
+    /* main nav buttons media */
     .nav-col {
         width: calc(100% / 5);
     }
@@ -245,13 +287,28 @@ footer {
         flex-wrap: wrap;
     }
 
+    /* play-content media */
+    .play-col {
+        width: calc(100% / 4);
+        padding-bottom: 1rem;
+    }
+
+    .play-columns {
+        flex-wrap: wrap;
+    }
     
 }
 
 /* s screen */
 @media screen and (max-width: 700px) {
+    /* main nav buttons media */
     .nav-col {
         width: calc(100% / 3);
+    }
+
+     /* play-content media */
+     .play-col {
+        width: calc(100% / 2);
     }
 
 }
@@ -335,7 +392,7 @@ footer {
         padding-left: 0;
     }
 
-    /* nav buttons */
+    /* main nav buttons media */
     .nav-col {
         width: calc(100% / 4);
     }
