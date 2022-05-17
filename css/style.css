@@ -71,6 +71,11 @@ main {
 .user-list img {
     width: 30px;
     vertical-align: middle;
+    opacity: 0.7;
+}
+
+.user-list img:hover {
+    opacity: 1;
 }
 
 .user-list span {
@@ -85,8 +90,9 @@ main {
     margin-right: 5px;
 }
 
-.playlist {
+.side-nav .playlist {
     color: #a3a3a3;
+    overflow-y: auto;
 }
 
 .playlist h5 {
@@ -157,7 +163,6 @@ main {
 
 .nav-buttons {
     width: 100%;
-    background-color: aliceblue;
 }
 
 .nav-columns {
@@ -166,13 +171,30 @@ main {
 }
 
 .nav-col {
-    border: 1px solid red;
     width: 120px;
     padding-top: 15px;
     padding-bottom: 30px;
     text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #7b7d82;
 }
 
+.card {
+    position: relative;
+}
+
+.box-line {
+    border-top: 2px solid #adff2f;
+    width: 25px;
+    position: absolute;
+    left: 40%;
+    margin-top: 2px;
+}
+
+.card a:hover {
+    color: white;
+}
 
 
 /* footer */
