@@ -221,11 +221,11 @@ main {
     display: none;
 }
 
-.play-card:hover img {
+.play-col:hover img {
     filter: brightness(0.5);
 }
 
-.play-card:hover i {
+.play-col:hover i {
     display: block;
 }
 
@@ -270,15 +270,71 @@ main {
     border-radius: 50%;
 }
 
-
-
 /* footer */
 footer {
     background-color: #282828;
+    color: white;
     width: 100%;
     height: 80px;
     overflow: hidden;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-foot {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.center-foot {
+    background-color: bisque;
+    width: 67%;
+}
+
+.right-foot {
+    background-color: cadetblue;
+    flex-grow: 1;
+}
+
+.top-center {
+    background-color: chocolate;
+    height: 45%;
+}
+
+.bottom-center {
+    background-color: cornflowerblue;
+    height: 55%;
+    
+}
+
+.left-foot img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.name-song {
+    color: #7b7d82;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.heart {
+    margin-left: 50px;
+    margin-right: 15px;
+}
+
+.left-foot i {
+    color: #7b7d82;
+}
+
+.name-song:hover {
+    text-decoration: underline;
+}
+
+.left-foot i:hover {
+    color: white;
 }
 
  /* fixed row */
@@ -328,7 +384,12 @@ footer {
 
     .play-columns {
         flex-wrap: wrap;
-    } 
+    }
+    
+    /* footer */
+    .center-foot {
+        width: 55%;
+    }
 }
 
 /* s screen */
@@ -341,6 +402,11 @@ footer {
      /* play-content media */
      .play-col {
         width: calc(100% / 2);
+    }
+
+    /* footer */
+    .center-foot {
+        width: 45%;
     }
 }
 
